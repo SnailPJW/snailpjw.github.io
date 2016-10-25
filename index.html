@@ -172,6 +172,10 @@
                         
                             <li><a href="/archives/">所有文章</a></li>
                         
+                            <li><a href="/tags/心晴">心晴</a></li>
+                        
+                            <li><a href="/tags/帖客哪裡菊">帖客哪裡菊</a></li>
+                        
                             <li><a href="/tags/">標籤花叢</a></li>
                         
                             <li><a href="/about/">我是誰</a></li>
@@ -257,6 +261,10 @@
                 
                     <li><a href="/archives/">所有文章</a></li>
                 
+                    <li><a href="/tags/心晴">心晴</a></li>
+                
+                    <li><a href="/tags/帖客哪裡菊">帖客哪裡菊</a></li>
+                
                     <li><a href="/tags/">標籤花叢</a></li>
                 
                     <li><a href="/about/">我是誰</a></li>
@@ -296,6 +304,15 @@
       <time datetime="2016-10-25T05:53:28.000Z" itemprop="datePublished">2016-10-25</time>
 </a>
 
+ 
+    <a href="/2016/10/25/CSI-Tech-西思艾-面試日記/#comments" title="查看評論">
+        <i class="fa fa-comments-o" aria-hidden="true"></i>
+        <span class="count-comment"></span>
+        
+        
+            <span class="disqus-comment-count" data-disqus-identifier="2016/10/25/CSI-Tech-西思艾-面試日記/"></span>
+        
+    </a>
 
     </div>
   
@@ -353,6 +370,15 @@
       <time datetime="2016-10-13T06:02:32.674Z" itemprop="datePublished">2016-10-13</time>
 </a>
 
+ 
+    <a href="/2016/10/13/hello-world/#comments" title="查看評論">
+        <i class="fa fa-comments-o" aria-hidden="true"></i>
+        <span class="count-comment"></span>
+        
+        
+            <span class="disqus-comment-count" data-disqus-identifier="2016/10/13/hello-world/"></span>
+        
+    </a>
 
     </div>
   
@@ -464,6 +490,26 @@
         })
     </script>
 
+
+    
+
+    
+        <script id="dsq-count-scr" src="//snailpjw.disqus.com/count.js" async></script>
+        <script>
+            if ($(".left-col").is(":visible")) {
+                var $disqusCount = $(".disqus-comment-count");
+                $disqusCount.bind("DOMNodeInserted", function(e) {
+                    var num = $(this).text().replace(/[^0-9]/ig,"");
+                    if (num > 0) {
+                        $(this).siblings(".count-comment").text(num);
+                    }
+                    $(this).remove();
+                })
+            } else {
+                $(".disqus-comment-count").remove();
+            }
+        </script>
+     
 
 
 <!-- Google Analytics -->

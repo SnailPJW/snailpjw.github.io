@@ -174,6 +174,10 @@
                         
                             <li><a href="/archives/">所有文章</a></li>
                         
+                            <li><a href="/tags/心晴">心晴</a></li>
+                        
+                            <li><a href="/tags/帖客哪裡菊">帖客哪裡菊</a></li>
+                        
                             <li><a href="/tags/">標籤花叢</a></li>
                         
                             <li><a href="/about/">我是誰</a></li>
@@ -259,6 +263,10 @@
                 
                     <li><a href="/archives/">所有文章</a></li>
                 
+                    <li><a href="/tags/心晴">心晴</a></li>
+                
+                    <li><a href="/tags/帖客哪裡菊">帖客哪裡菊</a></li>
+                
                     <li><a href="/tags/">標籤花叢</a></li>
                 
                     <li><a href="/about/">我是誰</a></li>
@@ -296,6 +304,15 @@
       <time datetime="2016-10-25T05:53:28.000Z" itemprop="datePublished">2016-10-25</time>
 </a>
 
+ 
+    <a href="/2016/10/25/CSI-Tech-西思艾-面試日記/#comments" title="查看評論">
+        <i class="fa fa-comments-o" aria-hidden="true"></i>
+        <span class="count-comment"></span>
+        
+        
+            <span class="disqus-comment-count" data-disqus-identifier="2016/10/25/CSI-Tech-西思艾-面試日記/"></span>
+        
+    </a>
 
     </div>
   
@@ -416,6 +433,66 @@
 
 
 
+
+    
+        <section id="comments">
+    <style> aside.comment-bar { margin: auto 30px; }</style>
+    <div id="disqus_thread"></div>
+    <script>
+        var disqus_config = function(){
+            this.page.url = 'http://yoursite.com/2016/10/25/CSI-Tech-西思艾-面試日記/';
+            this.page.identifier = '2016/10/25/CSI-Tech-西思艾-面試日記/';
+        };
+        var loadComment = function(){
+            var d = document, s = d.createElement('script');
+            s.src = '//snailpjw.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        }
+    </script>
+    
+    <aside class="comment-bar">
+        <a href="javascript:void(0);">
+            <i class="fa fa-commenting-o animated infinite pulse"></i>
+            <i class="fa fa-spinner fa-pulse"></i>
+            <span class="count-comment"></span>
+        </a>
+    </aside>
+    <script>
+        var $commentBar = $("#comments aside.comment-bar");
+        var load$hide = function(){
+            $commentBar.find("a > i").toggle();
+            loadComment();
+            $commentBar.fadeOut(800);
+        }
+        $commentBar.click(function(){
+            load$hide();
+        })
+        $commentBar.children("a").hover(function(){
+            load$hide();
+        })
+        if (window.location.hash === "#comments") {
+            load$hide();
+        }
+    </script>
+
+</section>
+
+
+    // Add comment count
+    <script id="dsq-count-scr" src="//snailpjw.disqus.com/count.js" async></script>
+    <span class="disqus-comment-count" data-disqus-identifier="2016/10/25/CSI-Tech-西思艾-面試日記/"></span>
+    <span class="disqus-comment-count" data-disqus-url="http://yoursite.com/2016/10/25/CSI-Tech-西思艾-面試日記/"></span>
+    <script>
+        $(".disqus-comment-count").hide();
+        var $disqusCount = $(".disqus-comment-count");
+        $disqusCount.bind("DOMNodeInserted", function(e) {
+            $(".count-comment").text(
+                $(this).text().replace(/[^0-9]/ig,"")
+            )
+            DISQUSWIDGETS.getCount({reset: true});
+        })
+    </script>
 
     
 
