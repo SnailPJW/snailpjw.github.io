@@ -880,6 +880,12 @@ a {
   -moz-background-size: 103%;
   background-size: 103%;
 }
+#header .header-nav .social .Pinterest {
+  background: url("/img/Pinterest.png") center no-repeat #bd081c;
+  -webkit-background-size: 85%;
+  -moz-background-size: 85%;
+  background-size: 85%;
+}
 #header .header-nav .social .GitHub {
   background: url("//cdn.bootcss.com/logos/0.2.0/github-octocat.svg") no-repeat #fff;
   -webkit-background-size: 90%;
